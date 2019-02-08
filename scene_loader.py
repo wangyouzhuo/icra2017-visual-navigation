@@ -16,6 +16,7 @@ class THORDiscreteEnvironment(object):
   def __init__(self, config=dict()):
 
     # configurations
+    # 定义终点
     self.scene_name          = config.get('scene_name', 'bedroom_04')
     self.random_start        = config.get('random_start', True)
     self.n_feat_per_locaiton = config.get('n_feat_per_locaiton', 1) # 1 for no sampling
